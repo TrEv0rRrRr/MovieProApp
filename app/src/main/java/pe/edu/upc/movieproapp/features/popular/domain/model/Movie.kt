@@ -1,4 +1,4 @@
-package pe.edu.upc.movieproapp.features.home.domain.model
+package pe.edu.upc.movieproapp.features.popular.domain.model
 
 // Acá va lo q te pide el ejercicio
 data class Movie(

@@ -1,4 +1,4 @@
-package pe.edu.upc.movieproapp.features.home.presentation
+package pe.edu.upc.movieproapp.features.popular.presentation
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -12,7 +12,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
-import pe.edu.upc.movieproapp.features.home.domain.model.Movie
+import pe.edu.upc.movieproapp.features.popular.domain.model.Movie
 
 @Composable
 fun MovieItem(movie: Movie) {

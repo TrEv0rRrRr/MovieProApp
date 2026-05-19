@@ -6,7 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import dagger.hilt.android.AndroidEntryPoint
 import pe.edu.upc.movieproapp.core.ui.theme.AppBookTheme
-import pe.edu.upc.movieproapp.features.home.presentation.navigation.Main
+import pe.edu.upc.movieproapp.features.popular.presentation.navigation.Main
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {

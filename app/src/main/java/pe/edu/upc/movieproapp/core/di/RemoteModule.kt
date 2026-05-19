@@ -6,7 +6,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import jakarta.inject.Named
 import jakarta.inject.Singleton
-import pe.edu.upc.movieproapp.features.home.data.remote.MovieService
+import pe.edu.upc.movieproapp.features.popular.data.remote.MovieService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

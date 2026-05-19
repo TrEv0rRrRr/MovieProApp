@@ -1,8 +1,8 @@
-package pe.edu.upc.movieproapp.features.home.data.mapper
+package pe.edu.upc.movieproapp.features.popular.data.mapper
 
-import pe.edu.upc.movieproapp.features.home.data.local.MovieEntity
-import pe.edu.upc.movieproapp.features.home.data.remote.MovieDto
-import pe.edu.upc.movieproapp.features.home.domain.model.Movie
+import pe.edu.upc.movieproapp.features.popular.data.local.MovieEntity
+import pe.edu.upc.movieproapp.features.popular.data.remote.MovieDto
+import pe.edu.upc.movieproapp.features.popular.domain.model.Movie
 
 fun MovieEntity.toDomain(): Movie {
     return Movie(

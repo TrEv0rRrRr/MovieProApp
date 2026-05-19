@@ -1,4 +1,4 @@
-package pe.edu.upc.movieproapp.features.home.data.local
+package pe.edu.upc.movieproapp.features.popular.data.local
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

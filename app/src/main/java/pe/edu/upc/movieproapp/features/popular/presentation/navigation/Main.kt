@@ -1,4 +1,4 @@
-package pe.edu.upc.movieproapp.features.home.presentation.navigation
+package pe.edu.upc.movieproapp.features.popular.presentation.navigation
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -8,7 +8,9 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import pe.edu.upc.movieproapp.features.favorites.presentation.FavoriteView
 import pe.edu.upc.movieproapp.features.home.presentation.HomeView
+import pe.edu.upc.movieproapp.features.popular.presentation.PopularView
 
 @Composable
 fun Main() {
@@ -30,16 +32,16 @@ fun Main() {
         ) {
 
             composable<HomeRoute> {
-                HomeView(hiltViewModel())
+                HomeView()
             }
 
-//            composable<FavoritesRoute> {
-//                FavoritesView(viewModel())
-//            }
-//
-//            composable<PopularRoute> {
-//                PopularView(viewModel())
-//            }
+            composable<PopularRoute> {
+                PopularView(hiltViewModel())
+            }
+
+            composable<FavoritesRoute> {
+                FavoriteView()
+            }
         }
     }
 }

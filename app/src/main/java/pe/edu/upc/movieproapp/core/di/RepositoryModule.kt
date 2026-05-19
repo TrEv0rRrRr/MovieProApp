@@ -4,8 +4,8 @@ import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ViewModelComponent
-import pe.edu.upc.movieproapp.features.home.data.repository.MovieRepositoryImpl
-import pe.edu.upc.movieproapp.features.home.domain.repository.MovieRepository
+import pe.edu.upc.movieproapp.features.popular.data.repository.MovieRepositoryImpl
+import pe.edu.upc.movieproapp.features.popular.domain.repository.MovieRepository
 
 @Module
 @InstallIn(ViewModelComponent::class)

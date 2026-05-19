@@ -1,4 +1,4 @@
-package pe.edu.upc.movieproapp.features.home.presentation
+package pe.edu.upc.movieproapp.features.favorites.presentation
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -10,15 +10,16 @@ import androidx.compose.ui.res.painterResource
 import pe.edu.upc.movieproapp.R
 
 @Composable
-fun HomeView() {
+fun FavoriteView() {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
 
         Image(
-            painter = painterResource(R.drawable.home),
+            painter = painterResource(R.drawable.favorite),
             contentDescription = null
         )
     }
 }
+

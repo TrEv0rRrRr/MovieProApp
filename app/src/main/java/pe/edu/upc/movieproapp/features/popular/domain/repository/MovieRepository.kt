@@ -1,7 +1,7 @@
-package pe.edu.upc.movieproapp.features.home.domain.repository
+package pe.edu.upc.movieproapp.features.popular.domain.repository
 
 import kotlinx.coroutines.flow.Flow
-import pe.edu.upc.movieproapp.features.home.domain.model.Movie
+import pe.edu.upc.movieproapp.features.popular.domain.model.Movie
 
 interface MovieRepository {
     fun getMovies(): Flow<List<Movie>>

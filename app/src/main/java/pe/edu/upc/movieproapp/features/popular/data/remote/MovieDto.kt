@@ -1,4 +1,4 @@
-package pe.edu.upc.movieproapp.features.home.data.remote
+package pe.edu.upc.movieproapp.features.popular.data.remote
 
 import com.google.gson.annotations.SerializedName
 import java.util.Date

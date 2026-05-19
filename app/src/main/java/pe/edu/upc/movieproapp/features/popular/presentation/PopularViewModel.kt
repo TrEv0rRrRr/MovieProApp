@@ -1,4 +1,4 @@
-package pe.edu.upc.movieproapp.features.home.presentation
+package pe.edu.upc.movieproapp.features.popular.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -8,14 +8,14 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import pe.edu.upc.movieproapp.features.home.domain.repository.MovieRepository
+import pe.edu.upc.movieproapp.features.popular.domain.repository.MovieRepository
 
 @HiltViewModel
-class HomeViewModel @Inject constructor(
+class PopularViewModel @Inject constructor(
     private val movieRepository: MovieRepository
 ) : ViewModel() {
-    private val _state = MutableStateFlow(HomeState())
-    val state: StateFlow<HomeState> = _state
+    private val _state = MutableStateFlow(PopularState())
+    val state: StateFlow<PopularState> = _state
 
     init {
         observeMovies()
