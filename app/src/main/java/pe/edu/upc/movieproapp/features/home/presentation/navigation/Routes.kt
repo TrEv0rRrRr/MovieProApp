@@ -1,4 +1,4 @@
-package pe.edu.upc.movieproapp.features.home.navigation
+package pe.edu.upc.movieproapp.features.home.presentation.navigation
 
 import kotlinx.serialization.Serializable
 

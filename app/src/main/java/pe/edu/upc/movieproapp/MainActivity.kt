@@ -4,10 +4,9 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.lifecycle.viewmodel.compose.viewModel
 import dagger.hilt.android.AndroidEntryPoint
 import pe.edu.upc.movieproapp.core.ui.theme.AppBookTheme
-import pe.edu.upc.movieproapp.features.home.presentation.HomeView
+import pe.edu.upc.movieproapp.features.home.presentation.navigation.Main
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -16,7 +15,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AppBookTheme {
-                HomeView(viewModel())
+                Main()
             }
         }
     }
