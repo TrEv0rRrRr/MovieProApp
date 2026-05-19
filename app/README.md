@@ -15,9 +15,9 @@
 9. Dale en **"Next"** y **"Next" otra vez**
 10. Dale **doble click** a la imagen en el **Resource Manager** y luego dale click en el botón:
 <div>
-  <p align="center"><img src="app/imgs/split.png" alt="Split button" width="700px" /></p>
+  <p align="center"><img src="imgs/split.png" alt="Split button" width="700px" /></p>
 </div>
 11. Luego borra lo q te aparece en rojo:
 <div>
-  <p align="center"><img src="app/imgs/borrar.png" alt="Borra eso xd" width="700px" /></p>
+  <p align="center"><img src="imgs/borrar.png" alt="Borra eso xd" width="700px" /></p>
 </div>
