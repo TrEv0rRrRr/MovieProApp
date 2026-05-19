@@ -15,7 +15,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "pe.edu.upc.appbook"
+        applicationId = "pe.edu.upc.MovieProApp"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

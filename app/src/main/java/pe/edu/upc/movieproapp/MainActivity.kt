@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import dagger.hilt.android.AndroidEntryPoint
-import pe.edu.upc.movieproapp.core.ui.theme.AppBookTheme
+import pe.edu.upc.movieproapp.core.ui.theme.MovieProAppTheme
 import pe.edu.upc.movieproapp.features.popular.presentation.navigation.Main
 
 @AndroidEntryPoint
@@ -14,7 +14,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            AppBookTheme {
+            MovieProAppTheme {
                 Main()
             }
         }

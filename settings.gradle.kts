@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AppBook"
+rootProject.name = "MovieProApp"
 include(":app")
