@@ -1,5 +1,6 @@
 package pe.edu.upc.movieproapp.features.home.data.repository
 
+import android.util.Log
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import pe.edu.upc.movieproapp.features.home.data.local.MovieDao
@@ -8,11 +9,13 @@ import pe.edu.upc.movieproapp.features.home.data.mapper.toEntity
 import pe.edu.upc.movieproapp.features.home.data.remote.MovieService
 import pe.edu.upc.movieproapp.features.home.domain.model.Movie
 import pe.edu.upc.movieproapp.features.home.domain.repository.MovieRepository
-import javax.inject.Inject
+import jakarta.inject.Inject
+import jakarta.inject.Named
 
 class MovieRepositoryImpl @Inject constructor(
     private val movieService: MovieService,
-    private val movieDao: MovieDao
+    private val movieDao: MovieDao,
+    @Named("apiKey") private val apiKey: String
 ): MovieRepository {
     override fun getMovies(): Flow<List<Movie>> {
         return movieDao.getMovies().map { entities -> entities.map { movieEntity -> movieEntity.toDomain() } }
@@ -23,8 +26,9 @@ class MovieRepositoryImpl @Inject constructor(
     }
 
     override suspend fun syncMovies() {
-        val response = movieService.getMovies()
+        val response = movieService.getMovies(apiKey)
         if (response.isSuccessful) {
+//            Log.d("API_TEST", response.body().toString())
             response.body()?.let { moviesResponseDto -> moviesResponseDto.results.forEach { movieDto ->
                 val localMovie = movieDao.getMovieById(movieDto.id)
                 val entity = movieDto.toEntity(localMovie?.isFavorite ?: false)

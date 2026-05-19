@@ -2,8 +2,11 @@ package pe.edu.upc.movieproapp.features.home.data.remote
 
 import retrofit2.Response
 import retrofit2.http.GET
+import retrofit2.http.Query
 
 interface MovieService {
-    @GET("movies")
-    suspend fun getMovies(): Response<MoviesResponseDto>
+    @GET("movie/popular")
+    suspend fun getMovies(
+        @Query("api_key") apiKey: String
+    ): Response<MoviesResponseDto>
 }

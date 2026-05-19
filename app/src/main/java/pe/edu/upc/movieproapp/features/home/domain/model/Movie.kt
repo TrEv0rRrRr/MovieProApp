@@ -4,7 +4,8 @@ package pe.edu.upc.movieproapp.features.home.domain.model
 data class Movie(
     val id: Int,
     val title: String,
+    val posterPath: String,
     val overview: String,
-    val popularity: Int,
+    val popularity: Double,
     val isFavorite: Boolean
 )

@@ -8,6 +8,7 @@ fun MovieEntity.toDomain(): Movie {
     return Movie(
         id = id,
         title = title,
+        posterPath = posterPath,
         overview = overview,
         popularity = popularity,
         isFavorite = isFavorite
@@ -19,6 +20,7 @@ fun MovieDto.toEntity(isFavorite: Boolean): MovieEntity {
         id = id,
         title = title,
         overview = overview,
+        posterPath = posterPath,
         popularity = popularity,
         isFavorite = isFavorite
     )

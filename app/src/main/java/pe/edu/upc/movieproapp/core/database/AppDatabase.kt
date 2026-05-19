@@ -5,7 +5,7 @@ import androidx.room.RoomDatabase
 import pe.edu.upc.movieproapp.features.home.data.local.MovieDao
 import pe.edu.upc.movieproapp.features.home.data.local.MovieEntity
 
-@Database(entities = [MovieEntity::class], version = 1, exportSchema = false)
+@Database(entities = [MovieEntity::class], version = 3, exportSchema = false)
 abstract class AppDatabase: RoomDatabase() {
     abstract fun eventDao(): MovieDao
 }
