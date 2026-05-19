@@ -21,3 +21,4 @@
 <div>
   <p align="center"><img src="imgs/borrar.png" alt="Borra eso xd" width="700px" /></p>
 </div>
+12. Y ya xd
