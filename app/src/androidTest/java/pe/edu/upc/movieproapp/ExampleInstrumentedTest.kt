@@ -1,4 +1,4 @@
-package pe.edu.upc.appbook
+package pe.edu.upc.movieproapp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

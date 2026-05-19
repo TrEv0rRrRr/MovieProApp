@@ -1,4 +1,4 @@
-package pe.edu.upc.appbook.core.ui.theme
+package pe.edu.upc.movieproapp.core.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "pe.edu.upc.appbook"
+    namespace = "pe.edu.upc.movieproapp"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1

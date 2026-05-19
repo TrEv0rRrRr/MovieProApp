@@ -1,4 +1,4 @@
-package pe.edu.upc.appbook
+package pe.edu.upc.movieproapp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import pe.edu.upc.appbook.core.ui.theme.AppBookTheme
+import pe.edu.upc.movieproapp.core.ui.theme.AppBookTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package pe.edu.upc.appbook
+package pe.edu.upc.movieproapp
 
 import org.junit.Test
 
