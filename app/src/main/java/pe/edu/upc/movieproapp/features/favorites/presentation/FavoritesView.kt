@@ -1,4 +1,4 @@
-package pe.edu.upc.movieproapp.features.popular.presentation
+package pe.edu.upc.movieproapp.features.favorites.presentation
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,9 +14,10 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import pe.edu.upc.movieproapp.features.popular.presentation.MovieItem
 
 @Composable
-fun PopularView(viewModel: PopularViewModel) {
+fun FavoritesView(viewModel: FavoritesViewModel) {
     val state = viewModel.state.collectAsState().value
 
     val snackbarHostState = remember { SnackbarHostState() }
@@ -26,7 +27,6 @@ fun PopularView(viewModel: PopularViewModel) {
             snackbarHostState.showSnackbar(it)
         }
     }
-
     Box(modifier = Modifier.fillMaxSize()) {
         when {
             state.movies.isNotEmpty() -> {

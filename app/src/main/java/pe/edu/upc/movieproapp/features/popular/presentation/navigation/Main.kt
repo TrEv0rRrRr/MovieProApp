@@ -8,7 +8,7 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import pe.edu.upc.movieproapp.features.favorites.presentation.FavoriteView
+import pe.edu.upc.movieproapp.features.favorites.presentation.FavoritesView
 import pe.edu.upc.movieproapp.features.home.presentation.HomeView
 import pe.edu.upc.movieproapp.features.popular.presentation.PopularView
 
@@ -40,7 +40,7 @@ fun Main() {
             }
 
             composable<FavoritesRoute> {
-                FavoriteView()
+                FavoritesView(hiltViewModel())
             }
         }
     }
