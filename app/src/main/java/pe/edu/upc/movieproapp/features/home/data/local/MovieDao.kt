@@ -16,7 +16,7 @@ interface MovieDao {
 
     // ? -> Significa q lo q devuelve puede ser null
     @Query("SELECT * FROM movies WHERE id = :id")
-    suspend fun getMoviesById(id: Int): MovieEntity?
+    suspend fun getMovieById(id: Int): MovieEntity?
 
     // Permite insertar si el registro no ha sido creado o actualizar si ya existe
     @Upsert

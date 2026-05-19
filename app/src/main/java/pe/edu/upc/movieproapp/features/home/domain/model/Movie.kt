@@ -1,8 +1,8 @@
 package pe.edu.upc.movieproapp.features.home.domain.model
 
-import java.util.Date
-
+// Acá va lo q te pide el ejercicio
 data class Movie(
+    val id: Int,
     val title: String,
     val overview: String,
     val popularity: Int,

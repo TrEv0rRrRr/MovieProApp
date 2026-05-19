@@ -2,7 +2,8 @@ package pe.edu.upc.movieproapp.features.home.data.remote
 
 import java.util.Date
 
-data class MoviesDto(
+// Acá van todos y cada uno de los datos q vienen de la API
+data class MovieDto(
     val adult: Boolean,
     val backdropPath: String,
     val genreIds: List<Int>,
